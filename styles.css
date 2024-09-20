@@ -1,0 +1,148 @@
+/* Elements */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/images/bg_tech.jpg"); 
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-image: url("/images/bg_tech.jpg");
+    background-size: cover;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Navigation menu styles */
+nav {
+    /* border: 5px solid #333; */
+    text-align: center;
+    border-top: 3px double #333;
+    border-bottom: 3px double #333;
+    padding: 5px;
+    background-color: whitesmoke;
+    justify-content: space-between;
+}
+
+nav a {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main {
+    max-width: 1200px;
+    /* max-width: 80vw; */
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    flex-direction: column;
+    /* object-position: center; */
+}
+
+button {
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    padding: 35px;
+}
+
+/* Classes */
+.center {
+    text-align: center;
+    padding: 40px;
+}
+
+.images {
+    text-align: center;
+}
+
+/* Call-to-action button styles */
+.cta-nav {
+    text-align: center;
+}
+
+.cta-nav a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.credits {
+    font-size: 10px;
+}
+
+.collapsible {
+    background-color: whitesmoke;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: rgb(234, 231, 231);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+/* Responsive styles */
+/* @media screen and (max-width: 768px) 
+nav ul {
+    display: none;
+} */
+
+/* IDs */
+#about-img {
+    text-align: center;
+    width: 70vw;
+    /* margin: auto; */
+}
+
+#main-img {
+    width: 70vw;
+    text-align: center;
+    /* margin: auto; */
+}
