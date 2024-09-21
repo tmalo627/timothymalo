@@ -17,7 +17,7 @@ body {
 /* Header styles */
 header {
     background-image: url("/images/bg_tech.jpg");
-    background-size: cover;
+    background-size:auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -28,7 +28,6 @@ h1, h2 {
 
 /* Navigation menu styles */
 nav {
-    /* border: 5px solid #333; */
     text-align: center;
     border-top: 3px double #333;
     border-bottom: 3px double #333;
@@ -43,14 +42,17 @@ nav a {
 }
 
 main {
-    max-width: 1200px;
     /* max-width: 80vw; */
+    max-width: 1200px;
     margin-top: 15px;
     margin-left: 50px;
     margin-right: 50px;
     padding: 20px;
     flex-direction: column;
-    /* object-position: center; */
+}
+
+img {
+    text-align: center;
 }
 
 button {
@@ -67,13 +69,63 @@ footer {
 }
 
 /* Classes */
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    /* padding-top: 56.25%;  */
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info {
+    text-align: center;
+    justify-content: space-between;
+}
+
 .center {
     text-align: center;
-    padding: 40px;
+    /* margin: 0 auto; */
+    /* padding: 40px; */
 }
 
 .images {
     text-align: center;
+}
+
+
+.collapsible {
+    background-color: whitesmoke;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: rgb(234, 231, 231);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: whitesmoke;
 }
 
 /* Call-to-action button styles */
@@ -103,46 +155,22 @@ footer {
     font-size: 10px;
 }
 
-.collapsible {
-    background-color: whitesmoke;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-    background-color: rgb(234, 231, 231);
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: whitesmoke;
-}
-
 /* Responsive styles */
 /* @media screen and (max-width: 768px) 
 nav ul {
     display: none;
-} */
-
+    } */
+    
 /* IDs */
 #about-img {
-    text-align: center;
-    width: 70vw;
-    /* margin: auto; */
+        /* text-align: center; */
+        align-items: center;
+        width: 70vw;
+        margin: auto;
 }
 
-#main-img {
+/* #main-img {
     width: 70vw;
     text-align: center;
-    /* margin: auto; */
+    margin: auto;
 }
