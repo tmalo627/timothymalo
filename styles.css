@@ -1,17 +1,9 @@
 /* Elements */
-
 /* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("/images/bg_tech.jpg"); 
-    color: #333;
 }
 
 /* Header styles */
@@ -22,8 +14,13 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 25px;
 }
 
 /* Navigation menu styles */
@@ -40,6 +37,13 @@ nav a {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/images/bg_tech.jpg"); 
+    color: #333;
+}        
 
 main {
     /* max-width: 80vw; */
@@ -69,14 +73,6 @@ footer {
 }
 
 /* Classes */
-.container {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    /* padding-top: 56.25%;  */
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-
 .responsive-iframe {
     position: absolute;
     top: 0;
@@ -88,8 +84,8 @@ footer {
 }
 
 .contact-info {
-    text-align: center;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .center {
@@ -101,7 +97,6 @@ footer {
 .images {
     text-align: center;
 }
-
 
 .collapsible {
     background-color: whitesmoke;
@@ -163,14 +158,6 @@ nav ul {
     
 /* IDs */
 #about-img {
-        /* text-align: center; */
-        align-items: center;
         width: 70vw;
         margin: auto;
-}
-
-/* #main-img {
-    width: 70vw;
-    text-align: center;
-    margin: auto;
 }
